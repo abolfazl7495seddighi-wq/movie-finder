@@ -59,4 +59,7 @@ movie-finder/
 
 ## لینک پروژه
 GitHub:
-`https://github.com/abolfazl7495seddighi-wq/movie-finder.git`
+https://github.com/abolfazl7495seddighi-wq/movie-finder
+
+Live Demo:
+https://abolfazl7495seddighi-wq.github.io/movie-finder/
