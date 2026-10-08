@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results - IMDb</title>
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-content">
+      <a href="./index.html" class="imdb-logo">IMDb</a>
+      
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search IMDb" autocomplete="off">
+        <span class="search-icon" id="search-btn">🔍</span>
+        <div class="search-dropdown" id="search-dropdown"></div>
+      </div>
+
+      <div class="genres-dropdown">
+        <select id="genre-select" class="search-category-select">
+          <option value="all">Genres ▾</option>
+          <option value="Action">Action</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Crime">Crime</option>
+          <option value="Drama">Drama</option>
+          <option value="Sci-Fi">Sci-Fi</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <div class="search-results-title-bar">
+      <h1 class="search-results-title">
+        Results for: <span class="query-keyword" id="query-display">All</span>
+      </h1>
+      <span class="search-total-count" id="results-count">0 titles</span>
+    </div>
+
+    <div class="movies-grid" id="results-grid"></div>
+
+    <nav class="pagination">
+      <button class="page-nav prev-page">‹</button>
+      <button class="page-num" data-page="1">1</button>
+      <button class="page-num" data-page="2">2</button>
+      <button class="page-num" data-page="3">3</button>
+      <button class="page-num active" data-page="4">4</button>
+      <span class="dots-separator">...</span>
+      <button class="page-num" data-page="24">24</button>
+      <button class="page-num" data-page="25">25</button>
+      <button class="page-nav next-page">›</button>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 by Karyar Studio</p>
+  </footer>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>

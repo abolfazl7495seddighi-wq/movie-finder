@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genres - IMDb</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-content">
+      <a href="./index.html" class="imdb-logo">IMDb</a>
+      
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search IMDb" autocomplete="off">
+        <span class="search-icon" id="search-btn">🔍</span>
+        <div class="search-dropdown" id="search-dropdown"></div>
+      </div>
+
+      <div class="genres-dropdown">
+        <select id="genre-select" class="search-category-select">
+          <option value="all">Genres ▾</option>
+          <option value="Action">Action</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Crime">Crime</option>
+          <option value="Drama">Drama</option>
+          <option value="Sci-Fi">Sci-Fi</option>
+        </select>
+      </div>
+
+      <a href="watchlist.html" style="color:#f5c518; text-decoration:none; font-weight:bold; margin-left:15px;">Watchlist</a>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <h1 class="page-main-title">
+      <span class="bullet">•</span> Genre: <span id="current-genre-title" style="color: #f5c518;">Action</span>
+    </h1>
+
+    <div class="genres-layout">
+      
+      <aside class="genres-sidebar">
+        <ul class="genre-list" id="genre-sidebar-list">
+          <li class="genre-item active"><a href="genres.html?genre=Action">Action</a></li>
+          <li class="genre-item"><a href="genres.html?genre=Adventure">Adventure</a></li>
+          <li class="genre-item"><a href="genres.html?genre=Animation">Animation</a></li>
+          <li class="genre-item"><a href="genres.html?genre=Biography">Biography</a></li>
+          <li class="genre-item"><a href="genres.html?genre=Comedy">Comedy</a></li>
+          <li class="genre-item"><a href="genres.html?genre=Crime">Crime</a></li>
+          <li class="genre-item"><a href="genres.html?genre=Drama">Drama</a></li>
+          <li class="genre-item"><a href="genres.html?genre=Family">Family</a></li>
+          <li class="genre-item"><a href="genres.html?genre=Fantasy">Fantasy</a></li>
+          <li class="genre-item"><a href="genres.html?genre=Film-Noir">Film-Noir</a></li>
+          <li class="genre-item"><a href="genres.html?genre=History">History</a></li>
+          <li class="genre-item"><a href="genres.html?genre=Horror">Horror</a></li>
+          <li class="genre-item"><a href="genres.html?genre=Music">Music</a></li>
+          <li class="genre-item"><a href="genres.html?genre=Musical">Musical</a></li>
+          <li class="genre-item"><a href="genres.html?genre=Mystery">Mystery</a></li>
+          <li class="genre-item"><a href="genres.html?genre=Romance">Romance</a></li>
+          <li class="genre-item"><a href="genres.html?genre=Sci-Fi">Sci-Fi</a></li>
+          <li class="genre-item"><a href="genres.html?genre=Sport">Sport</a></li>
+          <li class="genre-item"><a href="genres.html?genre=Thriller">Thriller</a></li>
+          <li class="genre-item"><a href="genres.html?genre=War">War</a></li>
+          <li class="genre-item"><a href="genres.html?genre=Western">Western</a></li>
+        </ul>
+      </aside>
+
+      <section class="genres-content">
+        
+        <div class="content-header-bar">
+          <button class="sort-btn">
+            Sort by: <span class="sort-value">Ranking</span> <span class="sort-icon">⇅</span>
+          </button>
+          <span class="titles-count" id="genre-titles-count">Loading...</span>
+        </div>
+
+        <hr class="section-divider">
+
+        <div id="genre-movies-container"></div>
+
+        <div class="pagination-controls" id="genre-pagination"></div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 by Karyar Studio</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

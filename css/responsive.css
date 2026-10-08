@@ -1,0 +1,124 @@
+@media (max-width: 1024px) {
+
+  .movies-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+@media (max-width: 850px) {
+
+  .genres-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .genres-sidebar {
+    max-height: 180px;
+  }
+
+  .genre-movie-card {
+    grid-template-columns: 1fr;
+  }
+
+  .card-poster {
+    height: 280px;
+  }
+
+  .slide-content {
+    left: 40px;
+    width: calc(100% - 80px);
+  }
+
+  .slide-title {
+    font-size: 2.2rem;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .nav-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 12px;
+  }
+
+  .imdb-logo {
+    font-size: 1.2rem;
+    padding: 2px 7px;
+  }
+
+  .search-bar {
+    flex: 1;
+    min-width: 0;
+    max-width: none;
+  }
+
+  .genre-select {
+    width: 100%;
+    order: 3;
+  }
+
+
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+
+  .slide-content {
+    left: 20px;
+    width: calc(100% - 40px);
+  }
+
+  .slide-title {
+    font-size: 2rem;
+  }
+
+  .slide-genres {
+    font-size: 0.9rem;
+  }
+
+  .slide-description {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .slide-date {
+    font-size: 0.85rem;
+  }
+
+  .slide-btn {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+
+  .slider-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 1.6rem;
+  }
+
+  .slider-prev {
+    left: 10px;
+  }
+
+  .slider-next {
+    right: 10px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-content {
+    padding-left: 20px;
+  }
+
+}
+

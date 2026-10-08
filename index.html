@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMDb Movie Finder</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-content">
+      <a href="index.html" class="imdb-logo">IMDb</a>
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search IMDb" autocomplete="off">
+        <span class="search-icon" id="search-btn">🔍</span>
+        <div class="search-dropdown" id="search-dropdown"></div>
+      </div>
+
+      <div class="genres-dropdown">
+        <select id="genre-select" class="search-category-select">
+          <option value="all">Genres ▾</option>
+          <option value="Action">Action</option>
+          <option value="Adventure">Adventure</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Crime">Crime</option>
+          <option value="Drama">Drama</option>
+          <option value="Sci-Fi">Sci-Fi</option>
+        </select>
+      </div>
+    </div>
+  </header>
+ 
+<section class="hero-section">
+  <div class="slider-wrapper" id="slider-wrapper"></div>
+    <button class="slider-arrow slider-prev" id="slider-prev" type="button" aria-label="Previous movie">‹</button>
+    <button class="slider-arrow slider-next" id="slider-next" type="button" aria-label="Next movie">›</button> 
+  <div class="dots-indicator" id="slider-dots"></div>
+</section>
+
+  <main class="container">
+    <div class="movies-grid" id="movies-container">
+      
+      <article class="movie-card">
+        <div class="poster-container">
+          <img src="https://m.media-amazon.com/images/M/MV5BN2QyZGU4ZDctOWMzMy00NTc5LThlM2QtWTlhM2E3ZTFkMDgzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Dune: Part Two">
+        </div>
+        <div class="card-body">
+          <div>
+            <h2 class="movie-title">Dune: Part Two</h2>
+            <p class="movie-genre">Action/ Adventure/ Drama</p>
+          </div>
+          <div class="card-footer">
+            <div class="rating"><span class="star-icon">★</span> 8.9</div>
+            <button class="btn-view-info">View Info</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="movie-card">
+        <div class="poster-container">
+          <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg" alt="Inception">
+        </div>
+        <div class="card-body">
+          <div>
+            <h2 class="movie-title">Inception</h2>
+            <p class="movie-genre">Sci-Fi/ Adventure</p>
+          </div>
+          <div class="card-footer">
+            <div class="rating"><span class="star-icon">★</span> 8.8</div>
+            <button class="btn-view-info">View Info</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="movie-card">
+        <div class="poster-container">
+          <img src="https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_.jpg" alt="The Wolf of Wall Street">
+        </div>
+        <div class="card-body">
+          <div>
+            <h2 class="movie-title">The Wolf of Wall Street</h2>
+            <p class="movie-genre">Crime/ Comedy</p>
+          </div>
+          <div class="card-footer">
+            <div class="rating"><span class="star-icon">★</span> 8.2</div>
+            <button class="btn-view-info">View Info</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="movie-card">
+        <div class="poster-container">
+          <img src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="Interstellar">
+        </div>
+        <div class="card-body">
+          <div>
+            <h2 class="movie-title">Interstellar</h2>
+            <p class="movie-genre">Sci-Fi/ Adventure</p>
+          </div>
+          <div class="card-footer">
+            <div class="rating"><span class="star-icon">★</span> 8.7</div>
+            <button class="btn-view-info">View Info</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="movie-card">
+        <div class="poster-container">
+          <img src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="Interstellar">
+        </div>
+        <div class="card-body">
+          <div>
+            <h2 class="movie-title">Interstellar</h2>
+            <p class="movie-genre">Sci-Fi/ Adventure</p>
+          </div>
+          <div class="card-footer">
+            <div class="rating"><span class="star-icon">★</span> 8.7</div>
+            <button class="btn-view-info">View Info</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <nav class="pagination">
+      <span class="page-nav">‹</span>
+      <span class="page-num active">1</span>
+      <span class="page-num">2</span>
+      <span class="dots">...</span>
+      <span class="page-num">24</span>
+      <span class="page-num">25</span>
+      <span class="page-nav">›</span>
+    </nav>
+  </main>
+  
+  <footer class="site-footer">
+    <p>© 2026 by Karyar Studio</p>
+  </footer>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
